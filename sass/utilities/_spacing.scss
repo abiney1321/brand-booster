@@ -12,6 +12,10 @@
   margin-block: auto;
 }
 
+.vertically-centered {
+  align-items: center;
+}
+
 @each $size-name, $size-value in $sizes {
   .margin {
     &-#{$size-name} {
