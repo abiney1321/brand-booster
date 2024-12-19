@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+.pricing-tier {
+   // flex: 1;
+   display: flex;
+   flex-direction: column;
+   
+   &__list {
+      list-style: none;
+      margin: $size-8 $size-6;
+
+      li {
+         margin-block: $size-6;
+         text-align: left;
+
+         &::before {
+            content: url("/assets/checkmark.svg");
+         }
+      }
+   }
+
+   .button {
+      padding-block: 16px;
+      margin-top: auto;
+      margin-inline: $size-6;
+      margin-bottom: $size-6;
+   }
+}
