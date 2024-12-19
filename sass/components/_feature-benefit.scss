@@ -4,4 +4,22 @@
    list-style: none;
    font-family: $navigation-font-family;
    font-weight: $navigation-font-weight;
+
+   li {
+      font-size: $size-8;
+      padding-block: $size-6;
+      background-image: url(/assets/cirlce-right-arrow-stroke.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+      transition: background-image 5000ms ease-in-out;
+
+      &:hover {
+         font-weight: $font-weight-bold;
+         background-image: url(/assets/circle-right-arrow-full.svg);
+      }
+
+      &:not(:last-child) {
+         border-bottom: 1px solid $color-brand-primary-100;
+      }
+   }
 }
