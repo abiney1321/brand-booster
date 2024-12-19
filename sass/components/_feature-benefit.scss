@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.feature-list {
+   list-style: none;
+   font-family: $navigation-font-family;
+   font-weight: $navigation-font-weight;
+}

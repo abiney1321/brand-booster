@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.testimonial {
+   display: grid;
+   gap: $grid-gap;
+
+   @include mq(medium) {
+      grid-template-columns: 1fr 245px;
+   }
+}
+
+.round-3 {
+   width: 245px;
+   height: 370px;
+   border-radius: 122.5px 122.5px 122.5px 0;
+}

@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+.img-left {
+   display: grid;
+   align-items: center;   
+   gap: 5rem;
+   
+   @include mq(medium) {
+      grid-template-columns: auto 1fr;
+   }
+}
+
+.round-img {
+   width: 400px;
+   height: 400px;
+   border-radius: 50%;
+   object-fit: cover;
+}
